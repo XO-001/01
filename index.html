@@ -18,7 +18,7 @@
     <script>
         function sendMessage() {
             let userInput = document.getElementById("userInput").value;
-            fetch("YOUR_COLAB_API_URL/chat?prompt=" + encodeURIComponent(userInput))
+            fetch("https://8eb2-34-16-129-73.ngrok-free.app//chat?prompt=" + encodeURIComponent(userInput))
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById("response").innerText = "AI: " + data.response;
